@@ -1,52 +1,19 @@
 <script type="text/javascript">
-<!--var goto=new Array(48)goto[0]="http://dlgp1hkucatering.omeka.net/items/show/1”
-goto[1]="http://dlgp1hkucatering.omeka.net/items/show/2"
-goto[2]="http://dlgp1hkucatering.omeka.net/items/show/3"
-goto[3]="http://dlgp1hkucatering.omeka.net/items/show/4"
-goto[4]="http://dlgp1hkucatering.omeka.net/items/show/5"
-goto[5]="http://dlgp1hkucatering.omeka.net/items/show/6"
-goto[6]="http://dlgp1hkucatering.omeka.net/items/show/7"
-goto[7]="http://dlgp1hkucatering.omeka.net/items/show/8"
-goto[8]="http://dlgp1hkucatering.omeka.net/items/show/9"
-goto[9]="http://dlgp1hkucatering.omeka.net/items/show/10"
-goto[10]="http://dlgp1hkucatering.omeka.net/items/show/11"
-goto[11]="http://dlgp1hkucatering.omeka.net/items/show/12"
-goto[12]="http://dlgp1hkucatering.omeka.net/items/show/13"
-goto[13]="http://dlgp1hkucatering.omeka.net/items/show/14"
-goto[14]="http://dlgp1hkucatering.omeka.net/items/show/15"
-goto[15]="http://dlgp1hkucatering.omeka.net/items/show/16"
-goto[16]="http://dlgp1hkucatering.omeka.net/items/show/17"
-goto[17]="http://dlgp1hkucatering.omeka.net/items/show/18"
-goto[18]="http://dlgp1hkucatering.omeka.net/items/show/19"
-goto[19]="http://dlgp1hkucatering.omeka.net/items/show/20"
-goto[20]="http://dlgp1hkucatering.omeka.net/items/show/21"
-goto[21]="http://dlgp1hkucatering.omeka.net/items/show/22"
-goto[22]="http://dlgp1hkucatering.omeka.net/items/show/23"
-goto[23]="http://dlgp1hkucatering.omeka.net/items/show/24"
-goto[24]="http://dlgp1hkucatering.omeka.net/items/show/25"
-goto[25]="http://dlgp1hkucatering.omeka.net/items/show/26"
-goto[26]="http://dlgp1hkucatering.omeka.net/items/show/27"
-goto[27]="http://dlgp1hkucatering.omeka.net/items/show/28"
-goto[28]="http://dlgp1hkucatering.omeka.net/items/show/29"
-goto[29]="http://dlgp1hkucatering.omeka.net/items/show/30"
-goto[30]="http://dlgp1hkucatering.omeka.net/items/show/31"
-goto[31]="http://dlgp1hkucatering.omeka.net/items/show/32"
-goto[32]="http://dlgp1hkucatering.omeka.net/items/show/33"
-goto[33]="http://dlgp1hkucatering.omeka.net/items/show/34"
-goto[34]="http://dlgp1hkucatering.omeka.net/items/show/35"
-goto[35]="http://dlgp1hkucatering.omeka.net/items/show/36"
-goto[36]="http://dlgp1hkucatering.omeka.net/items/show/37"
-goto[37]="http://dlgp1hkucatering.omeka.net/items/show/38"
-goto[38]="http://dlgp1hkucatering.omeka.net/items/show/39"
-goto[39]="http://dlgp1hkucatering.omeka.net/items/show/40"
-goto[40]="http://dlgp1hkucatering.omeka.net/items/show/41"
-goto[41]="http://dlgp1hkucatering.omeka.net/items/show/42"
-goto[42]="http://dlgp1hkucatering.omeka.net/items/show/43"
-goto[43]="http://dlgp1hkucatering.omeka.net/items/show/44"
-goto[44]="http://dlgp1hkucatering.omeka.net/items/show/45"
-goto[45]="http://dlgp1hkucatering.omeka.net/items/show/46"
-goto[46]="http://dlgp1hkucatering.omeka.net/items/show/47"
-goto[47]="http://dlgp1hkucatering.omeka.net/items/show/48"
-var newdate=new Date()var 
-geturl=newdate.getSeconds()%goto.lengthdocument.write("<meta http-equiv=\"refresh\" content=\"0;url=" +goto[geturl]+ "\">")-->
-</script>
+
+//INDEX VERSION ONLY
+
+//pages (use full url if in a different domain);
+
+var page1 = "http://dlgp1hkucatering.omeka.net/items/show/1";
+var page2 = "http://dlgp1hkucatering.omeka.net/items/show/2";
+var page3 = "http://dlgp1hkucatering.omeka.net/items/show/3";
+var page4 = "http://dlgp1hkucatering.omeka.net/items/show/4";
+
+//array (add all the pages inside [])
+var pages = [page1,page2,page3,page4];
+function showRandomPage()
+{
+    var num = Math.round(Math.random() * (pages.length-1));
+    window.location.href=pages[num];
+    console.log(num);
+};

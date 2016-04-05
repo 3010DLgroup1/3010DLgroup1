@@ -1,21 +1,31 @@
 <!doctype html>
 <html>
   <head>
-   Head
+    
+  <script language="JavaScript">
+<!-- Hide this script from old browsers --
+
+var links = new Array(5) 
+links[0] = "http://dlgp1hkucatering.omeka.net/items/show/48" 
+links[1] = "http://dlgp1hkucatering.omeka.net/items/show/1" 
+links[2] = "http://dlgp1hkucatering.omeka.net/items/show/2" 
+links[3] = "http://dlgp1hkucatering.omeka.net/items/show/3" 
+links[4] = "http://dlgp1hkucatering.omeka.net/items/show/4" 
+function go() { 
+var a = 1+Math.round(Math.random()*10) 
+var i = a 
+location = links[i] 
+} 
+// -- End Hiding Here -->
+
+</script>
+
   </head>
   
   
   <body>
     <p>here is word. testing</p>
-
-<script language="javascript">
-function ShowMeDate() {
-　var Today=new Date();
-　alert("今天日期是 " + Today.getFullYear()+ " 年 " + (Today.getMonth()+1) + " 月 " + Today.getDate() + " 日");
-}
-</script>
-<button onclick="ShowMeDate()">告訴我今天日期</button>
-
+    <a href="javascript:go()">click here</a>
 
   </body>
 </html>

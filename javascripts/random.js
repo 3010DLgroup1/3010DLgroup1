@@ -3,7 +3,7 @@
 //INDEX VERSION ONLY
 
 //pages (use full url if in a different domain);
-
+function jumprandom() {
 var page1 = "http://dlgp1hkucatering.omeka.net/items/show/1";
 var page2 = "http://dlgp1hkucatering.omeka.net/items/show/2";
 var page3 = "http://dlgp1hkucatering.omeka.net/items/show/3";

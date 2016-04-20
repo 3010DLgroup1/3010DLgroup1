@@ -2,4 +2,4 @@
 
 This github is used for the Lucky Draw special function of http://dlgp1hkucatering.omeka.net/
 
-The index page will be redirect to one of the restaurants randomly.
+Click the emoji in this page http://dlgp1hkucatering.omeka.net/lucky-draw  , then will jump to this github index page, this github index page will be redirected to one of the restaurants randomly.
